@@ -1,0 +1,11 @@
+[project]
+name = "employment-jumpscare"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "kaggle>=1.7.4.5",
+    "kagglehub[pandas-datasets]>=0.3.12",
+    "pyspark>=4.0.0",
+]
