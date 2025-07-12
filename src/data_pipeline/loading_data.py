@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
-from extracting_from_hf import get_df
-from transforming import transform_data_for_analytics, transform_data_for_ml
+from src.data_pipeline.extracting_from_hf import get_df
+from src.data_pipeline.transforming import transform_data_for_analytics, transform_data_for_ml
 
 def load_data():
     spark = SparkSession.builder.appName("employment_jumpscare").master("local[2]").getOrCreate()
